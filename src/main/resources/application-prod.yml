@@ -1,0 +1,4 @@
+
+env: prod
+import.es.host: vpc-es-prod-alto-1-aqu3sa4yhx5nrvmwkmcgna2w3e.us-east-1.es.amazonaws.com
+export.es.host: vpc-es-qa-inf-1-ybvrc7kwomoonrqtyqb5can4lu.us-east-1.es.amazonaws.com

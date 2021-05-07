@@ -1,0 +1,26 @@
+server:
+  port: 8099
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/migration
+    username: sm_user
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+  flyway:
+    enabled: true
+    clean-on-validation-error: true
+  application:
+    name: es-migration
+
+env: qa-1
+
+import:
+  es:
+    host: vpc-es-qa-alto-1-qtqnmlrv6kz7o5moulqqxndlry.us-east-1.es.amazonaws.com
+
+export:
+  es:
+    host: vpc-es-qa-inf-1-ybvrc7kwomoonrqtyqb5can4lu.us-east-1.es.amazonaws.com
